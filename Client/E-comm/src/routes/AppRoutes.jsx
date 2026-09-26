@@ -2,18 +2,21 @@ import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
-import Products from '../products/products'
 import AddProduct from '../products/AddProduct'
 import EditProduct from '../products/EditProduct'
-import Public from './protected/public'
-import Protected from './protected/protected'
+import Products from '../products/products'
+import Public from '../Protected/Public'
+import Private from '../Protected/Private'
+
+
+
 
 const AppRoutes = () => {
 
     const router = createBrowserRouter([
         {
             path: "/",
-            element:<Public />,
+            element: <Public />,
             children: [
                 {
                     index: true,
@@ -27,7 +30,7 @@ const AppRoutes = () => {
         },
         {
             path: "/products",
-            element: <Protected />,
+            element: <Private />,
             children: [
                 {
                     index: true,
