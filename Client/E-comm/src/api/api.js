@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "/api",
+    baseURL: "https://mern-product-management-jva6.vercel.app/api",
     withCredentials: true
 })
 
