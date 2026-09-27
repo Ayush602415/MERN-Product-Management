@@ -2,11 +2,14 @@ import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
-import AddProduct from '../products/AddProduct'
-import EditProduct from '../products/EditProduct'
-import Products from '../products/products'
+import AddProduct from '../Products/Create'
+import EditProduct from '../Products/Edit'
+
 import Public from '../Protected/Public'
 import Private from '../Protected/Private'
+import Products from '../Products/AllProducts'
+
+
 
 
 
