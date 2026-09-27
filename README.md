@@ -68,4 +68,5 @@ https://mern-product-management-jva6.vercel.app
 - Images stored using ImageKit
 - Image URL saved in MongoDB
 
-  
+  At the end, I want to say this the journey to make this small project of MERN is awesome. Hope i covered all the points as per the guidlines.
+  I made an edit and delete route for admin only and add products to both admin and user. For now by default the user will be admin until the evaluation for checking the proper functionality . After evaluation I Will set it to user only.
