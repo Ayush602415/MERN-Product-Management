@@ -66,7 +66,7 @@ const EditProduct = () => {
                     "Unable to update product"
             }
         ])
-        toast.error("Product Updation Failed")
+        toast.error("Admin Can Only Edit")
     }
 }
 
