@@ -40,7 +40,7 @@ const AddProduct = () => {
                 "Unable to create product"
         }
     ])
-    toast.error("Product Creation Failed")
+    toast.error("Admin Permission Required")
 }
 }
 
