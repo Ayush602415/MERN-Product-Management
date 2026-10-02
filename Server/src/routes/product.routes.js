@@ -9,7 +9,7 @@ const adminOnly = require("../middleware/admin.middleware")
 
 const productRouter = express.Router()
 
-productRouter.post("/",authenticate,upload.single('image'),productValidator,createProductController)
+productRouter.post("/",authenticate,adminOnly,upload.single('image'),productValidator,createProductController)
 productRouter.get("/",getAllProducts)
 productRouter.get("/:id",getProductByIdController)
 productRouter.put("/:id",authenticate,adminOnly,upload.single("image"),productValidator,updateProductController)
